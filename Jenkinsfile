@@ -25,7 +25,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Successful'
-        emailext(subject: 'Deploy successful', body: 'Deploy successful', to: 'emmanuel,tester')
+        emailext(subject: 'Deploy successful', body: 'Deploy successful', to: 'emmanuel,tester', attachLog: true)
       }
     }
   }
