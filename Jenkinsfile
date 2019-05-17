@@ -21,5 +21,10 @@ pipeline {
         input(message: 'Se aprueba?', submitter: 'emmanuel')
       }
     }
+    stage('Deploy') {
+      steps {
+        echo 'Successful'
+      }
+    }
   }
 }
