@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Deploy to development') {
       when {
-      branch 'development'
+        branch 'development'
       }
       steps {
        sh 'echo "Deploy to development"'
@@ -34,12 +34,11 @@ pipeline {
     }
     stage('Deploy to production') {
       when {
-      branch 'production'
+        branch 'production'
       }
       steps {
        sh 'echo "Deploy to production"'
       }
     }
-
   }
 }
