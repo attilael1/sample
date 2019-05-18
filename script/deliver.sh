@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 set -x
-nmpm start &
+npm start &
 sleep 1
 echo $! > .pidfile
 set +x
